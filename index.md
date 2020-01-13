@@ -32,7 +32,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 
 ## Welcome!
 
-This is the landing site for Columbia's [Foundations for Research Computing](https://rcfoundations.research.columbia.edu/) August Bootcamp, section {{ page.section }}.
+This is the landing site for Columbia's [Foundations for Research Computing](https://rcfoundations.research.columbia.edu/)  Bootcamp, section {{ page.section }}.
 
 While Python is a large part of the bootcamp, it is not the exclusive focus. Our goal is to get you started in applying computational methods in your research processes. This means we'll also cover the [UNIX shell](#syllabus-shell) and [Git](#syllabus-git) in addition to Python in order to develop fundamental and widely applicable skills. This workshop is intended for novices; no prior experience in working with computer programming is presumed.
 
