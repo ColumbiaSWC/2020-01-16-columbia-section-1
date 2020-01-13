@@ -297,9 +297,11 @@ please preview your site before committing, and make sure to run
   
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
-</p><p>
-  You will also need to download data files for the <a href="{{site.swc_pages}}/shell-novice/setup.html">Shell</a> and <a href="{{site.swc_pages}}/python-novice-gapminder/setup/">Python</a> lessons.
 </p>
+  <h3> id="files">Data Files</h3>
+  <p>
+  You will also need to download data files for the <a href="{{site.swc_pages}}/shell-novice/setup.html">Shell</a> and <a href="{{site.swc_pages}}/python-novice-gapminder/setup/">Python</a> lessons.
+  </p>
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
