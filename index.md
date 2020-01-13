@@ -10,8 +10,8 @@ humandate: "January 16-17, 2020"    # human-readable dates for the workshop (e.g
 humantime: "9:00 - 4:30"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2020-01-16      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2020-01-17        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Rob Lane", "Alan Crosswell", "Teddy Thomas"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: []     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Rob Lane", "Alan Crosswell", "Teddy Thomas", ] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Axinia Radeva", "Rahim Hashim", "Andres Montes", "Madiha Choksi",]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["rcfoundations@columbia.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -294,12 +294,16 @@ please preview your site before committing, and make sure to run
 
 <p>
 	Please install the following software before participating in the bootcamp. You might also find this <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">list of common issues</a> useful.
-</p>
-
+  
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
+</p><p>
+  You will also need to download data files for the <a href="{{site.swc_pages}}/shell-novice/setup.html">Shell</a> and <a href="{{site.swc_pages}}/python-novice-gapminder/setup/">Python</a> lessons.
+</p>
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% endif %}
+
+
